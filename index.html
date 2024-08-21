@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Kaushal | Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ccc;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            z-index: 1000;
+            position: relative;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: #000;
+        }
+        .navbar a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        .navbar a:hover {
+            color: #fff;
+        }
+        .navbar .menu {
+            display: flex;
+        }
+        .navbar .menu a {
+            margin-left: 1rem;
+        }
+        .navbar .toggle {
+            display: none;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/29/great-plain.jpg?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            z-index: 1;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #000;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .navbar .menu {
+                display: none;
+            }
+            .navbar .toggle {
+                display: block;
+                cursor: pointer;
+            }
+            .navbar .toggle + .menu {
+                display: block;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #000;
+                width: 100%;
+            }
+            .navbar .toggle + .menu a {
+                display: block;
+                text-align: center;
+                padding: 1rem;
+                border-top: 1px solid #444;
+            }
+            .navbar .toggle + .menu a:hover {
+                background-color: #333;
+            }
+        }
+    </style>
+</head>
+<header>
+    <div class="navbar">
+        <div class="toggle">☰</div>
+        <div class="menu">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</header>
+<body>
+
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Aryan Kaushal, a Computer Science and Engineering student with a passion for cybersecurity and network security.</p>
+        <a href="projects.html" class="btn btn-custom">View My Work</a>
+    </section>
+
+    <footer>
+        ©️ 2024 Aryan Kaushal
+    </footer>
+</body>
+</html>

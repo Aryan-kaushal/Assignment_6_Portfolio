@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: #000;
+        }
+        .navbar a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        .navbar a:hover {
+            color: #fff;
+        }
+        .navbar .menu {
+            display: flex;
+        }
+        .navbar .menu a {
+            margin-left: 1rem;
+        }
+        .navbar .toggle {
+            display: none;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .card a:hover {
+            color: #0056b3;
+        }
+
+        .footer {
+            background-color: #222;
+            color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .menu {
+                display: none;
+            }
+            .navbar .toggle {
+                display: block;
+                cursor: pointer;
+            }
+            .navbar .toggle + .menu {
+                display: block;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #000;
+                width: 100%;
+            }
+            .navbar .toggle + .menu a {
+                display: block;
+                text-align: center;
+                padding: 1rem;
+                border-top: 1px solid #444;
+            }
+            .navbar .toggle + .menu a:hover {
+                background-color: #333;
+            }
+        }
+    </style>
+</head>
+<header>
+    <div class="navbar">
+        <div class="toggle">☰</div>
+        <div class="menu">
+            <a href="about.html">About</a>
+              <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</header>
+<body>
+
+<header>
+    <h1>My Projects</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Project 1: Ethical Hacking</h2>
+        <p>This project focuses on ethical hacking and network security, where I implemented SYN flood attacks using raw sockets.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+        <h2>Project 2: Calculator</h2>
+        <p>A simple calculator project created using Python. This project was built to practice my programming skills.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+        <h2>Project 3: Web Transitions</h2>
+        <p>A web project focusing on video and text transition effects on a webpage, with specific attention to timing and font adjustments.</p>
+        <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+    </div>
+</div>
+
+<footer class="footer">
+    &copy; 2024 Aryan Kaushal
+</footer>
+
+</body>
+</html>
